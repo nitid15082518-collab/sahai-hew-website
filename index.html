@@ -46,7 +46,6 @@
     color:var(--gold);
   }
 
-  /* subtle wood-grain texture using layered gradients */
   .wood{
     background-color:var(--walnut);
     background-image:
@@ -72,7 +71,7 @@
     font-family:'Charmonman',cursive; font-weight:700;
     font-size:1.6rem; color:var(--gold-soft);
   }
-  .brand .crest{width:34px; height:34px; flex-shrink:0;}
+  .brand .crest{width:34px; height:34px; flex-shrink:0; border-radius:50%; object-fit:cover; border: 1px solid var(--gold);}
   .navlinks{display:flex; gap:28px; font-size:.92rem; color:var(--parchment-2);}
   .navlinks a{position:relative; padding:4px 0; transition:color .2s;}
   .navlinks a:hover{color:var(--gold-soft);}
@@ -100,7 +99,7 @@
     display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;
   }
   .crest-mark{
-    width:64px; height:64px; margin-bottom:18px;
+    width:64px; height:64px; margin-bottom:18px; border-radius:50%; object-fit:cover; border: 2px solid var(--gold);
   }
   .hero h1{
     font-size:clamp(2.6rem, 5vw, 4.2rem);
@@ -140,7 +139,6 @@
     display:flex; align-items:center; justify-content:center;
     font-family:'Charmonman',cursive; font-size:1rem; color:#5c3d22; text-align:center; padding:20px;
   }
-  /* rising steam, restrained ambient motion */
   .steam{position:absolute; bottom:6%; width:6px; border-radius:50%;
     background:rgba(255,255,255,0.18); filter:blur(3px);
     animation:rise 6s ease-in infinite;}
@@ -252,7 +250,7 @@
     padding:36px 24px 30px; text-align:center; color:var(--parchment-2);
     border-top:1px solid rgba(201,162,75,0.2);
   }
-  footer .crest{width:30px; height:30px; margin:0 auto 10px;}
+  footer .crest{width:30px; height:30px; margin:0 auto 10px; border-radius:50%; object-fit:cover; border: 1px solid var(--gold);}
   footer .fname{font-family:'Charmonman'; font-size:1.3rem; color:var(--gold-soft);}
   footer .copy{font-size:.78rem; margin-top:8px; color:#a89478;}
 
@@ -281,7 +279,7 @@
 <header>
   <nav>
     <a href="#top" class="brand">
-      <svg class="crest" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="none" stroke="#c9a24b" stroke-width="2"/><path d="M32 14c3 4 2 7-1 9 4-1 7 1 7 5 0 3-2 5-5 6 2 1 3 3 3 5 0 4-3 6-4 6-1-4-3-6-6-6-1 0-2 3-4 3-2-4 0-7 3-8-3-1-5-4-4-7 1-3 4-4 6-3-2-3-1-7 5-10z" fill="#c9a24b"/></svg>
+      <img src="assets/Logo.png.jpg" class="crest" alt="โลโก้สหายหิว" onerror="this.style.display='none'">
       สหายหิว
     </a>
     <button class="navtoggle" id="navToggle" aria-label="เปิดเมนู">&#9776;</button>
@@ -302,7 +300,7 @@
   <div class="steam s3"></div>
   <div class="hero-inner">
     <div>
-      <svg class="crest-mark" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="none" stroke="#c9a24b" stroke-width="2"/><path d="M32 14c3 4 2 7-1 9 4-1 7 1 7 5 0 3-2 5-5 6 2 1 3 3 3 5 0 4-3 6-4 6-1-4-3-6-6-6-1 0-2 3-4 3-2-4 0-7 3-8-3-1-5-4-4-7 1-3 4-4 6-3-2-3-1-7 5-10z" fill="#c9a24b"/></svg>
+      <img src="assets/Logo.png.jpg" class="crest-mark" alt="โลโก้สหายหิว" onerror="this.style.display='none'">
       <p class="eyebrow">ร้านอาหารริมทาง &middot; นำเสนอโดยสหายหิว</p>
       <h1>สหายหิว</h1>
       <p class="tagline">เป็นเพื่อนเมื่อยามคุณหิว</p>
@@ -318,10 +316,10 @@
     </div>
     <div class="hero-art">
       <div class="mascot-frame">
-        <img src="assets/chef-mascot.png" alt="พ่อครัวมาสคอตสหายหิว ชูนิ้วโป้ง ถือจานข้าวมันไก่"
+        <img src="assets/assetschef-mascot.png" alt="พ่อครัวมาสคอตสหายหิว"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="mascot-fallback" style="display:none;">
-          วางรูปมาสคอต<br>ของร้านที่นี่<br><small>assets/chef-mascot.png</small>
+          อัปโหลดรูปให้ถูกต้อง<br>เพื่อแสดงผล
         </div>
       </div>
     </div>
@@ -380,9 +378,9 @@
 
       <div class="dish-card">
         <div class="dish-photo">
-          <img src="assets/dish-kuayjub.jpg" alt="ก๋วยจั๊บญวน"
+          <img src="assets/assetsdish-kuayjub.png" alt="ก๋วยจั๊บญวน"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-          <span class="ph-label" style="display:none;">รูปก๋วยจั๊บญวน<br>assets/dish-kuayjub.jpg</span>
+          <span class="ph-label" style="display:none;">รออัปโหลดรูป</span>
         </div>
         <div class="dish-info">
           <span class="dish-tag">เส้นนุ่ม น้ำซุปกลมกล่อม</span>
@@ -396,9 +394,9 @@
 
       <div class="dish-card">
         <div class="dish-photo">
-          <img src="assets/dish-kiaotiew.jpg" alt="เกี๊ยวเตี๋ยวหมู"
+          <img src="assets/assetsdish-kiaotiew.png" alt="เกี๊ยวเตี๋ยวหมู"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-          <span class="ph-label" style="display:none;">รูปเกี๊ยวเตี๋ยวหมู<br>assets/dish-kiaotiew.jpg</span>
+          <span class="ph-label" style="display:none;">รออัปโหลดรูป</span>
         </div>
         <div class="dish-info">
           <span class="dish-tag">เครื่องแน่น หมูแดง กุ้ง ลูกชิ้น</span>
@@ -412,9 +410,9 @@
 
       <div class="dish-card">
         <div class="dish-photo">
-          <img src="assets/dish-khaomankai.jpg" alt="ข้าวมันไก่"
+          <img src="assets/assetsdish-khaomankai.png" alt="ข้าวมันไก่"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-          <span class="ph-label" style="display:none;">รูปข้าวมันไก่<br>assets/dish-khaomankai.jpg</span>
+          <span class="ph-label" style="display:none;">รออัปโหลดรูป</span>
         </div>
         <div class="dish-info">
           <span class="dish-tag">ไก่นุ่ม ข้าวมันหอม น้ำจิ้มสูตรเด็ด</span>
@@ -428,9 +426,9 @@
 
       <div class="dish-card">
         <div class="dish-photo">
-          <img src="assets/dish-khaomookrob.jpg" alt="ข้าวหมูกรอบคั่วพริกแกง ไข่ดาว"
+          <img src="assets/assetsdish-khaomookrob.png" alt="ข้าวหมูกรอบคั่วพริกแกง ไข่ดาว"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-          <span class="ph-label" style="display:none;">รูปข้าวหมูกรอบคั่วพริกแกง<br>assets/dish-khaomookrob.jpg</span>
+          <span class="ph-label" style="display:none;">รออัปโหลดรูป</span>
         </div>
         <div class="dish-info">
           <span class="dish-tag">เผ็ดร้อน หอมใบกะเพรา ไข่ดาวกรอบ</span>
@@ -461,9 +459,11 @@
         <p class="eyebrow">ที่ตั้งร้าน</p>
         <h3>สหายหิว</h3>
         <p>เลขที่ 97/6 หมู่ที่ 8 ถนนกสิกรรม<br>ตำบลเมืองใต้ / อำเภอเมือง / จังหวัดศรีสะเกษ</p>
-        <p style="margin-top:10px; font-size:.82rem; color:#c9b89a;">
-          * ใส่ลิงก์ Google Maps ของร้านได้ในโค้ดส่วน id="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286.72144419951235!2d104.31317462356365!3d15.098782622032257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3116e37bad2d9b01%3A0xc5d2a56ec66ac606!2z4Lij4LmJ4Liy4LiZ4Lih4Li14Lie4LijIOC4qOC4o-C4teC4quC4sOC5gOC4geC4qQ!5e0!3m2!1sth!2sth!4v1783227253812!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
-        </p>
+        
+        <!-- แผนที่ Google Maps -->
+        <div style="margin-top: 18px; border-radius: 8px; overflow: hidden; border: 2px solid rgba(201,162,75,0.3);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286.72144419951235!2d104.31317462356365!3d15.098782622032257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3116e37bad2d9b01%3A0xc5d2a56ec66ac606!2z4Lij4LmJ4Liy4LiZ4Lih4Li14Lie4LijIOC4qOC4o-C4teC4quC4sOC5gOC4geC4qQ!5e0!3m2!1sth!2sth!4v1783227253812!5m2!1sth!2sth" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
       </div>
       <div class="info-col">
         <p class="eyebrow">ติดต่อร้าน</p>
@@ -477,7 +477,7 @@
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="wood">
-  <svg class="crest" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="none" stroke="#c9a24b" stroke-width="2"/><path d="M32 14c3 4 2 7-1 9 4-1 7 1 7 5 0 3-2 5-5 6 2 1 3 3 3 5 0 4-3 6-4 6-1-4-3-6-6-6-1 0-2 3-4 3-2-4 0-7 3-8-3-1-5-4-4-7 1-3 4-4 6-3-2-3-1-7 5-10z" fill="#c9a24b"/></svg>
+  <img src="assets/Logo.png.jpg" class="crest" alt="โลโก้สหายหิว" onerror="this.style.display='none'">
   <p class="fname">สหายหิว</p>
   <p class="copy">&copy; 2569 ร้านสหายหิว &middot; เป็นเพื่อนเมื่อยามคุณหิว &middot; 093-493-1505</p>
 </footer>
